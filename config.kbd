@@ -81,3 +81,19 @@
     gohome (tap-hold 1000 home (layer-switch base))
 )
 
+(defsrc :name numpad
+  nlck kp/ kp* kp-
+  kp7  kp8 kp9 kp+
+  kp4  kp5 kp6
+  kp1  kp2 kp3 kprt
+  kp0    kp.
+)
+
+(deflayer phone :source numpad
+  :implicit-around disabled
+  nlck kp/ kp* kp-
+  kp1  kp2 kp3 kp+
+  kp4  kp5 kp6
+  kp7  kp8 kp9 kprt
+  kp0    kp.
+)
