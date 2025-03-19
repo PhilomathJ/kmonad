@@ -91,6 +91,13 @@
     escaps (tap-hold 500 esc caps)
 )
 
+;; Make both shift keys sticky
+;; (defalias
+;;     lsft (sticky-key 300 lsft)
+;;     rsft (sticky-key 300 rsft)
+;; )
+
+
 (defsrc :name numpad
   nlck kp/ kp* kp-
   kp7  kp8 kp9 kp+
